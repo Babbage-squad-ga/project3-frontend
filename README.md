@@ -8,10 +8,11 @@ The survey program will have two types of roles. Creators and takers.
 * As a creator I want to create an account
 * As a creator I want to login with a secure login
 * As a creator I want to create a one question survey
+* As a creator I want to specify up to 5 answers to a question
 * As a creator I would like to be able to give the survey a name
 * As a creator I want to be able to collect the city and age of the survey taker
 * As a creator I want to be able to generate a survey using a randomly generated URL
-* As a creator I want to be able to view a dashboard for a survey showing all answers
+* As a creator I want to be able to view a dashboard for a survey showing all answers, ages and cities
 * As a creator I want to be able to update a survey after its been created but before deployment
 * As a creator I want to be able to destroy a survey
 
@@ -35,6 +36,8 @@ The survey program will have two types of roles. Creators and takers.
 * As a creator I would like to be able to update any question within any survey at any time
 * As a creator I would like to be able to have answers selected froma drop down menu or entered in a text box format
 * As a creator I would like to be able to have the dashboard update in real time to see the answers pour in as they are completed
+* As a creator I would like to specify any numbers of answer to a question
+* As a creator I would like to view the quantitative data for any survey
 
 
 
