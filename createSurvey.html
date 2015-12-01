@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create your own survey</title>
+
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="login.css">
+
+  <!-- JQUERY -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+</head>
+<body>
+  <div id="navigation-bar">
+    <ul class="nav" id="nav-bar">
+      <li><a href="#log-out">Log out</a></li>
+      <li><a href="#dashboard">Dashboard</a></li>
+      <li><a class="active" href="#home">Home</a></li>
+    </ul>
+  </div>
+  <h1>Create your survey</h1>
+  <div class="survey">
+    <form id="create-survey" role="form">
+      <label for="">Survey name:</label>
+        <div class="form-group">
+          <input type="text" name="surveyname" id="survey-name" class="form-control" placeholder="enter survey name" value="">
+        </div>
+      <label for="">Create your survey question:</label>
+        <div class="form-group">
+          <input type="text" name="surveyquestion" id="survey-question" class="form-control" placeholder="create survey question" value="">
+        </div>
+      <div id="surveyanswers">
+      <label for="">Create your survey answer:</label>
+        <div class="form-group">
+          <input type="text" name="" id="answer1" class ="form-control" placeholder="create survey answers" value="">
+        </div>
+      <label for="">Create your survey answer:</label>
+        <div class="form-group">
+          <input type="text" name="" id="answer2" class ="form-control" placeholder="create survey answers" value="">
+        </div>
+      <label for="">Create your survey answer:</label>
+        <div class="form-group">
+          <input type="text" name="" id="answer3" class ="form-control" placeholder="create survey answers" value="">
+        </div>
+      <label for="">Create your survey answer:</label>
+        <div class="form-group">
+          <input type="text" name="" id="answer3" class ="form-control" placeholder="create survey answers" value="">
+        </div>
+      <label for="">Create your survey answer:</label>
+        <div class="form-group">
+          <input type="text" name="" id="answer3" class ="form-control" placeholder="create survey answers" value="">
+        </div>
+      </div>
+      <input type="text" id="finalsurveyanswers" class="hidden" name="surveyanswers">
+      <div class="form-group">
+        <input type="submit" id="create-survey" class="form-control" value="Submit">
+      </div>
+      </form>
+    </div>
+  <!-- SCRIPTS -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="login.js"></script>
+  <script src="ajax.js"></script>
+
+</body>
+</html>
