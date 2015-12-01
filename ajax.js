@@ -26,4 +26,12 @@ var api = {
       data: JSON.stringify(credentials)
     }, callback);
   },
+  createSurvey: function(surveyData, callback) {
+    this.ajax({
+      method: 'POST',
+      url: this.url + '/survey/makenew',
+      contentType: 'application/json',
+      data: JSON.stringify(surveyData)
+    }, callback);
+  },
 };
