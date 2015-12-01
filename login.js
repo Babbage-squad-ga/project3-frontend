@@ -5,14 +5,6 @@ $(function() {
     }
     });
 
-  $('#register-form-link').click(function(e) {
-    $("#register-form").delay(100).fadeIn(100);
-    $("#login-form").fadeOut(100);
-    $('#login-form-link').removeClass('active');
-    $(this).addClass('active');
-    e.preventDefault();
-  });
-
   var form2object = function(form) {
     var data = {};
     $(form).find("input").each(function(index, element) {
@@ -23,6 +15,14 @@ $(function() {
     });
     return data;
   };
+
+  $('#register-form-link').click(function(e) {
+    $("#register-form").delay(100).fadeIn(100);
+    $("#login-form").fadeOut(100);
+    $('#login-form-link').removeClass('active');
+    $(this).addClass('active');
+    e.preventDefault();
+  });
 
   // {"credentials": {username: xxx, password: xxx} }
   $('#register-form').on('submit',function(e){
@@ -64,5 +64,31 @@ $(function() {
     api.login(credentials, loginCallback);
   });
 
+  $('#create-survey').on('submit', function(e) {
+    e.preventDefault();
+    //create an empty survey answer array
+    var surveyAnswers = [];
+    //loop through surveyanswers div
+    $('#surveyanswers').each(function(i, div) {
+      //loop through each input div in surveyanswers
+      //and push the value to surveyAnswers array
+      $(div).find('input').each(function(j, element) {
+          surveyAnswers.push($(this).val());
+      });
+    });
+    // add surveyAnswers values to a hidden input field
+    $('#finalsurveyanswers').val(surveyAnswers.join('/*/'));
+    var surveyData = form2object(this);
+    var createSurveyCallback = function(error, data) {
+      if(error) {
+        console.log(error);
+      } else {
+        console.log(data);
+      }
+    };
+    api.createSurvey(surveyData, createSurveyCallback);
+  });
 
 });
+
+

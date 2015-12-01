@@ -1,6 +1,9 @@
 body {
-    padding-top: 90px;
+    padding-top: 30px;
 }
+
+/*LOGIN/REGISTER*/
+
 .panel-login {
   border-color: #ccc;
   -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
@@ -100,4 +103,44 @@ body {
 
 h1 {
   text-align: center;
+}
+
+/*NAVIGATION BAR*/
+
+.nav {
+  margin: 0;
+  padding: 10px;
+  background-color: #333;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: inline;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+/*CREATE SURVEY FORM*/
+
+.form-group {
+
+}
+
+.hidden {
+  display: none;
 }
