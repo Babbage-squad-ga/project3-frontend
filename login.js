@@ -73,7 +73,11 @@ $(function() {
       //loop through each input div in surveyanswers
       //and push the value to surveyAnswers array
       $(div).find('input').each(function(j, element) {
+          if($(this).val() !== "") {
           surveyAnswers.push($(this).val());
+        } else {
+          return surveyAnswers;
+        }
       });
     });
     // add surveyAnswers values to a hidden input field
