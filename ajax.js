@@ -34,4 +34,23 @@ var api = {
       data: JSON.stringify(surveyData)
     }, callback);
   },
+  loadSurvey: function(surveyURL, callback) {
+    this.ajax({
+      method: 'GET',
+      url: this.url + '/survey' + surveyURL,
+      contentType: 'application/json',
+      dataType: 'json'
+    }, callback);
+  },
+  createResult: function(surveyData, callback) {
+    this.ajax({
+      method: 'POST',
+      url: this.url + '/result/makenew',
+      contentType: 'application/json; charset=utf-8',
+      data: JSON.stringify(surveyData)
+    }, callback);
+  },
+  updateResult: function(surveyName, callback) {
+
+  }
 };
