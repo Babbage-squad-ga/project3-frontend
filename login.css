@@ -115,11 +115,11 @@ h1 {
   list-style-type: none;
 }
 
-li {
+#nav-bar li.navbar {
   float: right;
 }
 
-li a {
+#nav-bar li.navbar a {
   display: inline;
   color: white;
   text-align: center;
@@ -143,4 +143,17 @@ a:hover:not(.active) {
 
 .hidden {
   display: none;
+}
+
+
+/*SURVEY URL PAGE*/
+
+#survey-url {
+  display: none;
+  font-size: 30px;
+  text-align: center;
+}
+
+#answer-list {
+  display: block;
 }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="login.css">
+  <!-- JQUERY -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="enter-url">
+    <form>
+    <in
+    </form>
+  </div>
+  <div id="load-survey">
+    <div id="question1">
+      <h3>Q.</h3>
+    </div>
+
+    <div id="answer-list">
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+    </div>
+
+    <div id="enter-answer">
+      Enter your answer:
+      <input type="text" value="">
+    </div>
+    <div>
+      Enter your nickname:
+      <input type="text" value="">
+    </div>
+    <div>
+      Enter your age:
+      <input type="text" value="">
+    </div>
+    <div>
+      Enter your city:
+      <input type="text" value="">
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+
+    </div>
+  </div>
+  <!-- SCRIPTS -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="login.js"></script>
+  <script src="ajax.js"></script>
+  <script>
+     // function generateSurvey(jsonData) {
+     //    var html = '';
+     //    for (var i = 0; i < jsonData.length; i ++) {
+
+     //    }
+     // }
+     $(function (){
+     var loadSurveyCallback = function(error, data) {
+        if(error) {
+          console.log(error);
+        } else {
+          console.log(data);
+        }
+      };
+      var surveyURL = location.search;
+      api.loadSurvey(surveyURL, loadSurveyCallback);
+    });
+  </script>
+</body>
+</html>
