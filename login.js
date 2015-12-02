@@ -66,6 +66,8 @@ $(function() {
 
   $('#create-survey').on('submit', function(e) {
     e.preventDefault();
+    $("#create-survey-page").css("display", "none");
+    $("#survey-url").css("display", "block");
     //create an empty survey answer array
     var surveyAnswers = [];
     //loop through surveyanswers div
@@ -88,11 +90,30 @@ $(function() {
         console.log(error);
       } else {
         console.log(data);
+        var surveyURL = data.rURL;
+
+          var html = '';
+
+          html += '<div>';
+          html += 'Congratulations on your new survey! Share this uniquely created survey url with your friends!';
+          html +='<p>';
+          html += '<a href="">http://localhost:5000/takesurvey.html?q=';
+          html += surveyURL;
+          html += '</p>';
+          html += '</div>';
+          $('#survey-url').append(html);
       }
     };
+    var createResultCallback = function(error, data) {
+      if(error) {
+        console.log(error);
+      } else {
+        console.log(data);
+      }
+    }
     api.createSurvey(surveyData, createSurveyCallback);
+    api.createResult(surveyData, createResultCallback);
   });
-
 });
 
 
