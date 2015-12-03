@@ -8,7 +8,19 @@
   <script src="lib/js/jquery.min.js"></script>
 </head>
 <body>
-  <div id="load-survey">
+  <div id="navigation-bar">
+    <ul class="nav" id="nav-bar">
+      <li class="navbar"><a href="#log-out">Log out</a></li>
+      <li class="navbar"><a href="#dashboard">Dashboard</a></li>
+      <li class="navbar"><a class="active" href="#home">Home</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-8">
+        <div id="load-survey">
     <div id="question1">
     </div>
 
@@ -16,32 +28,39 @@
     </div>
     <form id="update-result" role="form">
 
-    <div id="survey-name">
+    <div class="form-group" id="survey-name">
       <input type="text" id="surveyname" name="surveyname" value="">
     </div>
-    <div id="enter-answer">
-      Enter your answer:
+    <label for="">Enter your answer:</label>
+    <div class="form-group" id="enter-answer">
       <input type="text" name="surveyanswer" value="">
     </div>
-    <div>
+    <div class="form-group">
       Enter your nickname:
       <input type="text" name="takernickname" value="">
     </div>
-    <div>
+    <div class="form-group">
       Enter your age:
       <input type="text" name="takerage" value="">
     </div>
-    <div>
+    <div class="form-group">
       Enter your city:
       <input type="text" name="takercity" value="">
     </div>
-    <div>
-      <input type="submit" id="" value="Submit">
+    <div class="form-group text-center">
+      <input type="submit" id="" class="btn btn-success" value="Submit">
     </div>
     </form>
 
     </div>
   </div>
+
+      </div>
+      <div class="col-md-2">
+      </div>
+    </div>
+  </div>
+
   <!-- SCRIPTS -->
   <script src="content/js/app.js"></script>
   <script src="content/js/ajax.js"></script>

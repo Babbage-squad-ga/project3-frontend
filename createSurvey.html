@@ -19,11 +19,16 @@
     </ul>
   </div>
   <h1>Create your survey</h1>
-  <div class="survey">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-8">
+        <div class="survey">
     <form id="create-survey" role="form">
       <label for="">Survey name:</label>
         <div class="form-group">
-          <input type="text" name="surveyname" id="survey-name" class="form-control" placeholder="enter survey name" value="">
+          <input type="text" name="surveyname" id="survey-name1" class="form-control" placeholder="enter survey name" value="">
         </div>
       <label for="">Create your survey question:</label>
         <div class="form-group">
@@ -52,12 +57,20 @@
         </div>
       </div>
       <input type="text" id="finalsurveyanswers" class="hidden" name="surveyanswers">
-      <div class="form-group">
-        <input type="submit" id="" class="form-control" value="Submit">
+      <div class="form-group text-center">
+        <input type="submit" id="" class="btn btn-success" value="Submit">
       </div>
       </form>
     </div>
     </div>
+
+      </div>
+      <div class="col-md-2">
+      </div>
+
+    </div>
+  </div>
+
     <div id="survey-url">
     </div>
   <!-- SCRIPTS -->
