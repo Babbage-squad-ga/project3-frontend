@@ -45,7 +45,7 @@ $(function() {
       }
     };
     api.login(credentials, loginCallback);
-    window.location.href = '/createsurvey.html'
+    window.location.href = 'createSurvey.html'
   });
 
 })

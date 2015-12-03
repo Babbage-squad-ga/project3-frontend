@@ -171,3 +171,11 @@ a:hover:not(.active) {
   font-size: 20px;
 
 }
+
+button, input, optgroup, select, textarea {
+  margin: 10px !important;
+}
+
+label {
+  margin-left: 10px !important;
+}
