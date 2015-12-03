@@ -5,6 +5,7 @@ $(function() {
     e.preventDefault();
     $("#create-survey-page").css("display", "none");
     $("#survey-url").css("display", "block");
+    $("#go-back").css("display", "block");
     //create an empty survey answer array
     var surveyAnswers = [];
     //loop through surveyanswers div
