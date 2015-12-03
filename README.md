@@ -42,8 +42,8 @@ The survey program will have two types of roles. Creators and takers.
 
 
 ### Taker Stories
-* As a taker I would like to be able to view a sumamry of submitted answers after I submit my answers
-* As a taker I would like to be able to
+* As a taker I would like to be able to view a summary of submitted answers after I submit my answers
+
 
 
 
