@@ -35,9 +35,12 @@ $(function() {
           html += '<div>';
           html += 'Congratulations on your new survey! Share this uniquely created survey url with your friends!';
           html +='<p>';
-          html += '<a href="">http://localhost:5000/takesurvey.html?q=';
+          html += '<a href="';
+          html += 'http://localhost:5000/takesurvey.html?q=';
           html += surveyURL;
-          html += '</p>';
+          html += '">http://localhost:5000/takesurvey.html?q=';
+          html += surveyURL;
+          html += '</a></p>';
           html += '</div>';
           $('#survey-url').append(html);
       }
