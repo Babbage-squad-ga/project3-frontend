@@ -10,10 +10,9 @@ The survey program will have two types of roles. Creators and takers.
 * As a creator I want to create a one question survey
 * As a creator I want to specify up to 5 answers to a question
 * As a creator I would like to be able to give the survey a name
-* As a creator I want to be able to collect the city and age of the survey taker
+* As a creator I want to be able to collect a nickname, city, age, and answer from the survey taker
 * As a creator I want to be able to generate a survey using a randomly generated URL
-* As a creator I want to be able to view a dashboard for a survey showing all answers, ages and cities
-* As a creator I want to be able to update a survey after its been created but before deployment
+* As a creator I want to be able to view a dashboard fwhere I can request a survey showing all of the answers, nicknames, ages, and cities
 * As a creator I want to be able to destroy a survey
 
 
@@ -23,7 +22,7 @@ The survey program will have two types of roles. Creators and takers.
 * As a taker I want to be able to go to a survey by clicking on a random url
 * As a taker I want to be able answer the single question survey
 * As a taker I want to be able to submit my survey
-* As a taker I want to be able to give my city and age within the survey
+* As a taker I want to be able to give my nickname, city, and age within the survey
 
 
 
@@ -50,6 +49,7 @@ The survey program will have two types of roles. Creators and takers.
 
 ##Wireframe Diagrams
 
+<img src="wire-frames.jpg">
 
 ##Workflow Planning
 * Define user stories
