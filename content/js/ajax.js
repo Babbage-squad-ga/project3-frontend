@@ -58,4 +58,26 @@ var api = {
       data: JSON.stringify(surveyData)
     }, callback);
   },
+  getResults: function (surveyName, callback) {
+    this.ajax({
+      method: 'GET',
+      url: this.url + '/result?q=' + surveyName,
+    }, callback);
+  },
+
+  deleteResults: function (surveyName, callback) {
+    this.ajax({
+      method: 'DELETE',
+      url: this.url + '/result/destroy?q=' + surveyName,
+      dataType: 'json'
+    }, callback);
+  },
+
+  deleteSurvey: function (surveyName, callback) {
+    this.ajax({
+      method: 'DELETE',
+      url: this.url + '/survey/destroy?q=' + surveyName,
+      dataType: 'json'
+    }, callback);
+  },
 };

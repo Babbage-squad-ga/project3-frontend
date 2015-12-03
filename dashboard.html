@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>Survey</title>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/content/css/app.css">
+
+    <!-- Bootstrap core CSS -->
+    <script src="lib/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <script src="content/js/controllers/dashboard.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script type="text/javascript" src="assets/handlebars-v3.0.3.js"></script>
+    <div id="navigation-bar">
+    <ul class="nav" id="nav-bar">
+      <li class="navbar"><a href="#log-out">Log out</a></li>
+      <li class="navbar"><a class="active" href="createsurvey.html">Create Survey</a></li>
+    </ul>
+  </div>
+    <div id="header">
+      <h1>Survey Dashboard</h1>
+  </div>
+
+  <div id="showsurvey">
+      <form action="" id="showSurvey">
+        <div class="top-row">
+          <div class="field-wrap">
+            <input id="surveyName" type="text" required autocomplete="off" placeholder = "Survey Name">
+          </div>
+
+          <button id="showSurvey" type="submit" class="button button-block button-register"/>Show Results</button>
+
+
+        </div>
+     </form>
+ </div>
+
+<div>
+          <button id="deleteSurvey" type="button" class="button button-block button-register"/>Destroy Survey</button>
+</div>
+
+<div id="main">
+        <h3>Survey Question & Answers</h3>
+</div>
+
+<div id="question"></div>
+
+  <div id="resultListTable">
+      <form class="form-message-table">
+          <table class="table table-bordered">
+              <thead>
+                  <tr>
+                      <th>Nickname</th>
+                      <th>Age</th>
+                      <th>City</th>
+                      <th>Answer</th>
+                  </tr>
+              </thead>
+              <tbody id="result-list">
+                <script id="result-index" type="text/x-handlebars-template">
+                  {{#each results}}
+                  <tr data-results-id="{{id}}">
+                      <td>{{takernickname}}</td>
+                      <td>{{takerage}}</td>
+                      <td>{{takercity}}</td>
+                      <td>{{surveyanswer}}</td>
+                  </tr>
+                  {{/each}}
+              </script>
+          </tbody>
+      </table>
+  </form>
+  <!-- SCRIPTS -->
+
+  <script src="content/js/app.js"></script>
+  <script src="content/js/ajax.js"></script>
+  <script src="content/js/controllers/dashboard.js"></script>
+</div>
+</html>
+
+
