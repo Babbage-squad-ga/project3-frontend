@@ -8,13 +8,6 @@
   <script src="lib/js/jquery.min.js"></script>
 </head>
 <body>
-  <div id="navigation-bar">
-    <ul class="nav" id="nav-bar">
-      <li class="navbar"><a href="#log-out">Log out</a></li>
-      <li class="navbar"><a href="#dashboard">Dashboard</a></li>
-      <li class="navbar"><a class="active" href="#home">Home</a></li>
-    </ul>
-  </div>
   <div class="container">
     <div class="row">
       <div class="col-md-2">
@@ -29,29 +22,28 @@
     <form id="update-result" role="form">
 
     <div class="form-group" id="survey-name">
-      <input type="text" id="surveyname" name="surveyname" value="">
+      <input type="text" id="surveyname" name="surveyname">
     </div>
     <label for="">Enter your answer:</label>
     <div class="form-group" id="enter-answer">
-      <input type="text" name="surveyanswer" value="">
+      <input type="text" name="surveyanswer" class="form-control" value="">
     </div>
+    <label for="">Enter your nickname:</label>
     <div class="form-group">
-      Enter your nickname:
-      <input type="text" name="takernickname" value="">
+      <input type="text" name="takernickname" class="form-control" value="">
     </div>
+    <label for="">Enter your age:</label>
     <div class="form-group">
-      Enter your age:
-      <input type="text" name="takerage" value="">
+      <input type="text" name="takerage" class="form-control" value="">
     </div>
+    <label for="">Enter your city:</label>
     <div class="form-group">
-      Enter your city:
-      <input type="text" name="takercity" value="">
+      <input type="text" name="takercity" class="form-control" value="">
     </div>
     <div class="form-group text-center">
       <input type="submit" id="" class="btn btn-success" value="Submit">
     </div>
     </form>
-
     </div>
   </div>
 
@@ -59,6 +51,9 @@
       <div class="col-md-2">
       </div>
     </div>
+  </div>
+  <div id="thank-you">
+    <p id="thank-you-msg"> Success!! Thank you for taking the survey!</p>
   </div>
 
   <!-- SCRIPTS -->

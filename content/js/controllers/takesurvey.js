@@ -20,11 +20,10 @@ $(function() {
         var surveyURL = location.search;
         api.loadSurvey(surveyURL, loadSurveyCallback);
 
-
-
           $('#update-result').on('submit', function(e) {
             e.preventDefault();
-
+            $("#load-survey").css("display", "none");
+            $("#thank-you").css("display", "block");
             $('#surveyname').val(surveyName);
 
             var surveyData = form2object(this);
