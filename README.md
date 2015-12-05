@@ -1,5 +1,6 @@
 # README For Babbage-squad Project3-Survey
-This README file is for general information and details on the front end of the project.  For the backend README file see:https://github.com/mkutter72/project2-api/blob/master/README.md
+This README file is for general information and details on the front end of the project.  For the backend README file
+see: https://github.com/Babbage-squad-ga/project3-backend/blob/master/README.md
 
 ## Users
 The survey program will have two types of roles. Creators and takers.
@@ -72,5 +73,6 @@ HTLM, CSS, Boostrap
 JavaScript,  JQuery, AJAX, JSON
 Handlebars, Node.js, Express, Mongodb, Mongoose
 
-##URL to Project3
-http://mkutter72.github.io/plonk_front_end/
+##URL to Project 4 hosted in gh-pages
+http://babbage-squad-ga.github.io/project3-frontend/
+
