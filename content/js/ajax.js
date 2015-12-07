@@ -62,6 +62,7 @@ var api = {
     this.ajax({
       method: 'GET',
       url: this.url + '/result?q=' + surveyName,
+      dataType: 'json'
     }, callback);
   },
 
@@ -69,7 +70,6 @@ var api = {
     this.ajax({
       method: 'DELETE',
       url: this.url + '/result/destroy?q=' + surveyName,
-      dataType: 'json'
     }, callback);
   },
 
@@ -77,7 +77,6 @@ var api = {
     this.ajax({
       method: 'DELETE',
       url: this.url + '/survey/destroy?q=' + surveyName,
-      dataType: 'json'
     }, callback);
   },
 };
