@@ -37,9 +37,9 @@ $(function() {
           html += 'Congratulations on your new survey! Share this uniquely created survey url with your friends!';
           html +='<p>';
           html += '<a href="';
-          html += 'http://localhost:5000/takesurvey.html?q=';
+          html += 'http://babbage-squad-ga.github.io/project3-frontend/takesurvey.html?q=';
           html += surveyURL;
-          html += '">http://localhost:5000/takesurvey.html?q=';
+          html += '">http://babbage-squad-ga.github.io/project3-frontend/takesurvey.html?q=';
           html += surveyURL;
           html += '</a></p>';
           html += '</div>';
