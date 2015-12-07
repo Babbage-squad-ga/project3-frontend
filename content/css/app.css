@@ -158,13 +158,6 @@ a:hover:not(.active) {
   margin-top: 30px;
 }
 
-#go-back {
-  display: none;
-  text-align: center;
-  vertical-align: top;
-  margin-top: 250px;
-}
-
 #answer-list {
   display: block;
 }
