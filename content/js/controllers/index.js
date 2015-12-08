@@ -42,10 +42,10 @@ $(function() {
       } else {
         console.log('success');
         console.log(data);
+        window.location.href = 'createSurvey.html'
       }
     };
     api.login(credentials, loginCallback);
-    window.location.href = 'createSurvey.html'
   });
 
 })
